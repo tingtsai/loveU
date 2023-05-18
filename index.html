@@ -669,7 +669,14 @@
     }());
     S.init();
 </script>
-<audio  autoplay="autoplay" src="很需要.mp3" loop="loop" controls="controls">
-</audio>
+<audio id="myAudio" src="很需要.mp3" loop="loop"></audio>
+<button onclick="playAudio()">Play Audio</button>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById('myAudio');
+    audio.play();
+  }
+</script>
 </body>
 </html>
